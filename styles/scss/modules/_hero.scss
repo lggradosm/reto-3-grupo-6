@@ -11,6 +11,7 @@
   background-image: url("../../../src/images/AVATAR_2_BANNER-WEB_DESKTOP_1920x1080px.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 .slide--content-wrapper {
@@ -65,4 +66,29 @@
   transform: translate(-0.7em, -0.4em);
   width: 4em;
   z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .slide {
+    background-image: url("../../../src/images/AVATAR_2_Banner_web_mobile_937x1424px.jpg");
+  }
+  .content--details {
+    display: none;
+  }
+  .slide--content-wrapper {
+    flex-direction: column;
+  }
+  .content--title {
+    font-size: 32px;
+    line-height: 1em;
+    margin-bottom: 10px;
+  }
+  .slide {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 1070px) {
+  .slide {
+    padding: 0 24px;
+  }
 }
