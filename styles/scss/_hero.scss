@@ -8,7 +8,7 @@
   align-items: flex-end;
 
   height: 700px;
-  background-image: url("../../../src/images/AVATAR_2_BANNER-WEB_DESKTOP_1920x1080px.jpg");
+  background-image: url("../../src/images/AVATAR_2_BANNER-WEB_DESKTOP_1920x1080px.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -70,7 +70,7 @@
 
 @media (max-width: 767px) {
   .slide {
-    background-image: url("../../../src/images/AVATAR_2_Banner_web_mobile_937x1424px.jpg");
+    background-image: url("../../src/images/AVATAR_2_Banner_web_mobile_937x1424px.jpg");
   }
   .content--details {
     display: none;
