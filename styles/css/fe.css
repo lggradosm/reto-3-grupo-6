@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "cineplanet-icons";
-  src: url("../../src/icons/cineplanet-icons.woff") format("woff2");
+  src: url("../../src/icons/cineplanet-icons.woff");
 }
 .header {
   border-bottom: 1px solid #dedfe3;
