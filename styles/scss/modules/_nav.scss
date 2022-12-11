@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "cineplanet-icons";
+  src: url("../../../src/icons/cineplanet-icons.woff");
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dedfe3;
+  height: 4em;
+  font-size: 1.1em;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.166));
+}
+.header--logo {
+  height: 2em;
+}
+.navbar {
+  width: 100%;
+  max-width: 1070px;
+  padding: 0;
+}
+.nav-link {
+  color: #dedfe3 !important;
+  position: relative;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.8em;
+  height: 4px;
+  background-color: $accent-color;
+}
+.nav-link:hover {
+  color: white !important ;
+}
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.navbar--right-menu {
+  list-style: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.navbar--right-menu-item {
+  margin-right: 2em;
+  cursor: pointer;
+}
+.cineplanet-icon {
+  font-family: cineplanet-icons;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  font-size: 28px;
+  vertical-align: middle;
+  text-transform: none;
+  -webkit-text-stroke-width: 0.3px;
+}
+
+.cineplanet-icon_login::before {
+  content: "\F12A";
+}
+
+.cineplanet-icon_search::before {
+  content: "\F139";
+}
+.cineplanet-icon_contact::before {
+  content: "\F117";
+}
+.cineplanet-icon_tickets::before {
+  content: "\F141";
+  font-size: 32px;
+}
+.joinus--label {
+  position: absolute;
+  font-size: 12px;
+  text-align: center;
+  background-color: $accent-color;
+  border-radius: 20px;
+  width: 50px;
+  top: -8px;
+  left: 14px;
+  animation: blinking 2.5s linear infinite;
+  -webkit-animation: blinking 2.5s linear infinite;
+}
+
+@keyframes blinking {
+  0% {
+    background-color: $accent-color;
+    color: #fff;
+    -webkit-box-shadow: 0 0 12px $accent-color;
+    box-shadow: 0 0 12px $accent-color;
+  }
+  50% {
+    background-color: #d1485f;
+    color: #fff;
+    -webkit-box-shadow: 0 0 3px #d1485f;
+    box-shadow: 0 0 3px #d1485f;
+  }
+  100% {
+    background-color: $accent-color;
+    color: #fff;
+    -webkit-box-shadow: 0 0 12px $accent-color;
+    box-shadow: 0 0 12px $accent-color;
+  }
+}
