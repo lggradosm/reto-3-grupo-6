@@ -30,7 +30,7 @@ const scrollDisableHandler = () => {
 };
 
 document.addEventListener("scroll", (e) => {
-  window.scrollY >= 300 ? scrollActiveHandler() : scrollDisableHandler();
+  window.scrollY >= 700 ? scrollActiveHandler() : scrollDisableHandler();
 });
 
 closeModal.addEventListener("click", () => {
