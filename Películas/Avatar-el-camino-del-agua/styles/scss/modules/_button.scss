@@ -1,0 +1,19 @@
+.button {
+    background-color: var(--primary-button-color);
+    border: 0.005rem solid var(--secondary-button-color);
+    border-radius: var(--primary-border-radius);
+    color: var(--reverse-primary-text-color);
+    font-size: 0.8rem;
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.7em 4.5em;
+    cursor: pointer;
+    transition: box-shadow 0.25s, filter 0.25s;
+
+    &:hover {
+      background-color: var(--secondary-button-color);
+      box-shadow: 0 0 0.125rem 0.125rem var(--primary-button-color);
+      
+    }
+}
