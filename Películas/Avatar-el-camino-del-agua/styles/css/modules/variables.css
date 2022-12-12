@@ -1,3 +1,22 @@
 :root {
   scroll-behavior: smooth;
+  
+    --primary-text-color: #004a8c;
+    --secondary-text-color: #000;
+    --reverse-primary-text-color: #fff;
+    --primary-invalid-color: crimson;
+    --primary-shadow-color: #ffffff80;
+    --secondary-shadow-color: #ffffff40;
+    --reverse-primary-shadow-color: #00000080;
+    --reverse-secondary-shadow-color: #00000040;
+    --primary-highlight-color: #61dafb;
+    --secondary-highlight-color: gold;
+    --primary-button-color: #e50246;
+    --secondary-button-color: #b20237;
+    --primary-font-family: 'Open Sans', sans-serif;
+    --padding-section: 1.5rem;
+    --padding-container: 1rem;
+    --max-width-container: 512px;
+    --primary-border-radius: 1rem;
+  
 }

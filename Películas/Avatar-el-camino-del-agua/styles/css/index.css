@@ -1,1 +1,12 @@
 @import './modules/variables.css';
+
+.body {
+  background-color: white;
+  color: #004a8c;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+.main {
+  overflow: hidden;
+}
