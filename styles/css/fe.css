@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Open+Sans:wght@400;600;700&display=swap");
+.f-elements {
+  display: flex;
+}
+.f-elements--header {
+  align-items: center;
+  justify-content: space-between;
+}
+.f-elements--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.f-direction-column {
+  flex-direction: column;
+}
+
+.gap--sm {
+  gap: 20px;
+}
+
+@font-face {
+  font-family: "cineplanet-icons";
+  src: url("../../src/icons/cineplanet-icons.woff");
+}
+.header {
+  border-bottom: 1px solid #dedfe3;
+  height: 4em;
+  font-size: 1.1em;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.166));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header--logo {
+  height: 2em;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1070px;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  padding: 0;
+}
+
+.nav-link {
+  color: #dedfe3 !important;
+  position: relative;
+  margin-right: 20px;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.8em;
+  height: 4px;
+  background-color: #e50246;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.navbar--right-menu {
+  list-style: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.navbar--right-menu-item {
+  margin-right: 2em;
+  cursor: pointer;
+  position: relative;
+}
+
+.cineplanet-icon {
+  font-family: cineplanet-icons;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  font-size: 28px;
+  vertical-align: middle;
+  text-transform: none;
+  -webkit-text-stroke-width: 0.3px;
+}
+
+.cineplanet-icon_login::before {
+  content: "\f12a";
+}
+
+.cineplanet-icon_search::before {
+  content: "\f139";
+}
+
+.cineplanet-icon_contact::before {
+  content: "\f117";
+}
+
+.cineplanet-icon_tickets::before {
+  content: "\f141";
+  font-size: 32px;
+}
+
+.cineplanet-icon_burguer::before {
+  content: "\f10b";
+  font-size: 0.8em;
+}
+
+.white .cineplanet-icon {
+  color: black;
+}
+
+.icon_contact--text {
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  font-size: 0.8em;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.joinus--label {
+  position: absolute;
+  font-size: 12px;
+  text-align: center;
+  background-color: #e50246;
+  border-radius: 20px;
+  width: 50px;
+  top: -8px;
+  left: 14px;
+  animation: blinking 2.5s linear infinite;
+  -webkit-animation: blinking 2.5s linear infinite;
+}
+
+.navbar--right-menu-item:hover .icon_contact--text {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.header--menu-trigger-container {
+  display: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.header--off-menu-close {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.166));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 2;
+}
+
+.header--off-menu {
+  width: 15em;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -15em;
+  background-color: white;
+  z-index: 10;
+}
+
+.header--off-menu .nav-link {
+  color: black !important;
+  padding: 5px 10px;
+  font-size: 0.85em;
+}
+
+.hide {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.visible .navbar {
+  left: 15em;
+}
+
+.visible .header--off-menu {
+  left: 0;
+}
+
+.white {
+  background: white;
+}
+
+@keyframes blinking {
+  0% {
+    background-color: #e50246;
+    color: #fff;
+    -webkit-box-shadow: 0 0 12px #e50246;
+    box-shadow: 0 0 12px #e50246;
+  }
+  50% {
+    background-color: #d1485f;
+    color: #fff;
+    -webkit-box-shadow: 0 0 3px #d1485f;
+    box-shadow: 0 0 3px #d1485f;
+  }
+  100% {
+    background-color: #e50246;
+    color: #fff;
+    -webkit-box-shadow: 0 0 12px #e50246;
+    box-shadow: 0 0 12px #e50246;
+  }
+}
+@media (max-width: 767px) {
+  .cineplanet-icon_contact {
+    display: none;
+  }
+  .header--logo {
+    height: 1.7em;
+  }
+  .navbar--right-menu-item {
+    margin-right: 0.8em;
+  }
+}
+@media (max-width: 1070px) {
+  .header {
+    padding: 10px 20px;
+  }
+  .header--menu-trigger-container {
+    display: block;
+  }
+  .navbar-nav {
+    display: none !important;
+  }
+  .navbar--right-menu-item:nth-child(2) {
+    margin-right: 0;
+  }
+  .navbar--right-menu-item:nth-child(3) {
+    display: none;
+  }
+  .joinus--label {
+    left: -32px;
+  }
+}
+.hero-carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  align-items: flex-end;
+  height: 700px;
+  background-image: url("../../src/images/AVATAR_2_BANNER-WEB_DESKTOP_1920x1080px.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.slide--content-wrapper {
+  width: 100%;
+  max-width: 1070px;
+}
+
+.slide--content-wrapper::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+}
+
+.slide--content {
+  padding: 0 50px 100px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.content--title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 64px;
+  position: relative;
+  z-index: 2;
+}
+
+.content--details {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 32px 0;
+  position: relative;
+}
+
+.content--action {
+  color: white;
+  text-decoration: none;
+  background-color: #e50246;
+  padding: 15px 10px;
+  border-radius: 20px;
+  transition: background-color 0.4s;
+}
+
+.content--action:hover {
+  color: white;
+  background: linear-gradient(160deg, #e50246, #b20237 61%);
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 15.4px 0.6px rgba(229, 2, 70, 0.48);
+  box-shadow: 0 2px 15.4px 0.6px rgba(229, 2, 70, 0.48);
+  transition: all 0.6s;
+}
+
+.content--title::before {
+  background-color: #e50246;
+  content: "";
+  height: 1.4em;
+  position: absolute;
+  transform: translate(-0.7em, -0.4em);
+  width: 4em;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .slide {
+    background-image: url("../../src/images/AVATAR_2_Banner_web_mobile_937x1424px.jpg");
+  }
+  .content--details {
+    display: none;
+  }
+  .slide--content-wrapper {
+    flex-direction: column;
+  }
+  .content--title {
+    font-size: 32px;
+    line-height: 1em;
+    margin-bottom: 10px;
+  }
+  .slide {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 1070px) {
+  .slide {
+    padding: 0 24px;
+  }
+}
+.main {
+  height: 300vh;
+}
+
+/*# sourceMappingURL=fe.css.map */
